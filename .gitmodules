@@ -1,0 +1,3 @@
+[submodule "qtpsd"]
+	path = qtpsd
+	url = https://github.com/signal-slot/qtpsd.git

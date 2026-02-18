@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>PSD Run</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body, #root {
+        width: 100%;
+        height: 100%;
+        font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Noto Color Emoji';
+      }
+      .ai-markdown p { margin: 0.4em 0; }
+      .ai-markdown p:first-child { margin-top: 0; }
+      .ai-markdown p:last-child { margin-bottom: 0; }
+      .ai-markdown ul, .ai-markdown ol { margin: 0.4em 0; padding-left: 1.5em; }
+      .ai-markdown li { margin: 0.2em 0; }
+      .ai-markdown h1, .ai-markdown h2, .ai-markdown h3, .ai-markdown h4 {
+        margin: 0.6em 0 0.3em; font-size: 1em; font-weight: 600;
+      }
+      .ai-markdown h1 { font-size: 1.2em; }
+      .ai-markdown h2 { font-size: 1.1em; }
+      .ai-markdown code {
+        background: rgba(255,255,255,0.08); padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.9em;
+      }
+      .ai-markdown pre { background: rgba(255,255,255,0.06); padding: 8px; border-radius: 4px; overflow-x: auto; margin: 0.4em 0; }
+      .ai-markdown pre code { background: none; padding: 0; }
+      .ai-markdown strong { color: #e0e0e0; }
+      .ai-markdown hr { border: none; border-top: 1px solid #444; margin: 0.6em 0; }
+      .ai-markdown table { border-collapse: collapse; margin: 0.4em 0; }
+      .ai-markdown th, .ai-markdown td { border: 1px solid #444; padding: 4px 8px; font-size: 0.9em; }
+      .ai-markdown th { background: rgba(255,255,255,0.06); }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
