@@ -166,7 +166,11 @@ export default function AiChat() {
       {/* API Key */}
       <div style={styles.apiKeySection}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-          <label style={{ fontSize: '11px', opacity: 0.7 }}>API Key</label>
+          <label style={{ fontSize: '11px', opacity: 0.7 }}>
+            <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener noreferrer" style={{ color: '#999', textDecoration: 'none' }}>
+              Anthropic API Key
+            </a>
+          </label>
           <button
             onClick={() => setShowApiKey(!showApiKey)}
             style={{ background: 'none', border: 'none', color: '#666', cursor: 'pointer', fontSize: '11px' }}
@@ -218,7 +222,7 @@ export default function AiChat() {
       {/* Input area */}
       <div style={styles.inputArea}>
         <textarea
-          rows={5}
+          rows={10}
           placeholder="Shift+Enter で送信"
           value={input}
           onChange={(e) => setInput(e.target.value)}
